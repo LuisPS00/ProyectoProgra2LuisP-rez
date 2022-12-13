@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuCliente.master.cs" Inherits="ProyectoProgramaciónLuisPérez.MenuCliente" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="Css/Estilos.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                      
+<ul>
+  <li><a href="HomeCliente.aspx">Inicio</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Catálogos</a>
+    <div class="dropdown-content"> 
+      <a href="UsuariosClientes.aspx">Usuarios</a>
+      
+
+        <li><a href="Login.aspx">Salir</a></li>
+    </div>
+  </li>
+</ul>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
